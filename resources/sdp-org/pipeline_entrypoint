@@ -39,6 +39,9 @@ node{
   to do while parsing the aggregated configuration.
 */
 println "DEBUG: preparing to load libraries"
+pipeline_config().libraries.each{ lib_name, lib_config ->
+  println "lib_name: ${lib_name}, lib_config: ${lib_config}"
+}
 load_libraries                   this
 println "DEBUG: should have loaded libraries"
 create_application_environments  this
