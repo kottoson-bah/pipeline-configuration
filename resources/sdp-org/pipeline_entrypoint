@@ -42,6 +42,7 @@ println "DEBUG: preparing to load libraries"
 pipeline_config().libraries.each{ lib_name, lib_config ->
   println "lib_name: ${lib_name}, lib_config: ${lib_config}"
 }
+println "Libraries: ${pipeline_config().libraries}"
 load_libraries                   this
 println "DEBUG: should have loaded libraries"
 create_application_environments  this
