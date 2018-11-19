@@ -38,7 +38,9 @@ node{
   to separate the capabilities of the DSL from what we choose
   to do while parsing the aggregated configuration.
 */
+println "DEBUG: preparing to load libraries"
 load_libraries                   this
+println "DEBUG: should have loaded libraries"
 create_application_environments  this
 create_stages                    this
 create_jenkinsfile_variables     this
