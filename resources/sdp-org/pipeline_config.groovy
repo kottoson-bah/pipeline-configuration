@@ -7,6 +7,12 @@ application_image_repository_credential = "sdp-jenkins-docker-registry"
 libraries{
   github_enterprise
   docker
+  sonarqube
+  openshift{
+    url = "https://master.ocp-dev.microcaas.net:8443"
+    tiller_namespace = "kottoson-tiller"
+    tiller_credential = "kottoson-tiller"
+  }
 }
 
 application_environments{
