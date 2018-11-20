@@ -2,9 +2,12 @@ build()
 static_code_analysis()
 
 on_pull_request to: master, {
- deploy_to dev
+ //deploy_to dev
+ stage("pull request"){
+  echo "This is a pull request"
+ }
 }
 
 on_merge to: master, {
- deploy_to dev 
+ deploy_to dev
 }
