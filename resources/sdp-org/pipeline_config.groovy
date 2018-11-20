@@ -12,6 +12,8 @@ libraries{
     url = "https://master.ocp-dev.microcaas.net:8443"
     tiller_namespace = "kottoson-tiller"
     tiller_credential = "kottoson-tiller"
+    helm_configuration_repository = "https://github.com/kottoson-bah/sdp-example-helm-config.git"
+    helm_configuration_repository_credential = "github"
   }
 }
 
