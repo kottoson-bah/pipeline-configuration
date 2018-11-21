@@ -13,6 +13,7 @@ setBinding(new SdpBinding())
 node{
   cleanWs()
   checkout scm 
+  println "credentialsId: ${scm.credentialsId}"
   stash "workspace"
   /*
     TODO: 
