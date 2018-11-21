@@ -13,7 +13,7 @@ setBinding(new SdpBinding())
 node{
   cleanWs()
   checkout scm 
-  println "scmVars: ${checkout(scm)}"
+  println "env: ${env}"
   stash "workspace"
   /*
     TODO: 
