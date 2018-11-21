@@ -13,7 +13,7 @@ setBinding(new SdpBinding())
 node{
   cleanWs()
   checkout scm 
-  println "env: ${env.getEnvironment()}"
+  println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
   stash "workspace"
   /*
     TODO: 
