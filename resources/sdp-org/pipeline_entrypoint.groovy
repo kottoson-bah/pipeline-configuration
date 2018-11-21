@@ -14,7 +14,7 @@ node{
   cleanWs()
   checkout scm 
   println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
-  println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()"}
+  println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()}"
   stash "workspace"
   /*
     TODO: 
