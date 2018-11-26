@@ -16,7 +16,7 @@ node{
   println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
   println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()}"
   println "GitHub URL: ${scm.getUserRemoteConfigs()[0].getUrl()}"
-  println "GitHubServerConfig: ${scm.getUserRemoteConfigs()[0].getApiUrl()}"
+  println "Remote Config Class: ${scm.getUserRemoteConfigs()[0].getClass()}"
   stash "workspace"
   /*
     TODO: 
