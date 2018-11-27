@@ -19,12 +19,8 @@ node{
   println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
   println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()}"
   println "GitHub URL: ${scm.getUserRemoteConfigs()[0].getUrl()}"
-  def build = (WorkflowRun) CpsThread.current().getExecution().getOwner().getExecutable()
-  def job = build.getParent()
-  println "Job Class: ${job.getClass()}"
-  println "Job: ${job}"
-  println "Job SCMs: ${job.getSCMs()}"
-  println "Binding Vars: ${this.getBinding().getVariables()}"
+  println "Env Git URL: ${env.GIT_URL}"
+  printlm "Base Git URL: ${env.GIT_URL.split('/')[0..-3].join('/')}"
   stash "workspace"
   /*
     TODO: 
