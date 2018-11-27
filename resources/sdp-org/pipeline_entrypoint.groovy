@@ -23,6 +23,7 @@ node{
   def job = build.getParent()
   println "Job Class: ${job.getClass()}"
   println "Job: ${job}"
+  println "Job SCMs: ${job.getSCMs()}"
   stash "workspace"
   /*
     TODO: 
