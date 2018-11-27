@@ -18,8 +18,9 @@ node{
   println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
   println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()}"
   println "GitHub URL: ${scm.getUserRemoteConfigs()[0].getUrl()}"
-  def Job = {(WorkflowRun) CpsThread.current().getExecution().getOwner().getExecutable()}.getParent()
-  println "Job Class: ${Job.getClass()}"
+  def build = (WorkflowRun) CpsThread.current().getExecution().getOwner().getExecutable()
+  def kob = build.getParent()
+  println "Job Class: ${job.getClass()}"
   println "Job: ${Job}"
   stash "workspace"
   /*
