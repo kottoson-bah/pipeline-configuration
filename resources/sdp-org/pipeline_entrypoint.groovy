@@ -6,6 +6,7 @@
 @Library("solutions_delivery_platform") 
 import sdp.binding.*
 import sdp.extensions.*
+import org.jenkinsci.plugins.workflow.job.WorkflowRun
 
 currentBuild.result = "SUCCESS" 
 setBinding(new SdpBinding())
