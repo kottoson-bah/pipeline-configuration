@@ -8,6 +8,7 @@ import sdp.binding.*
 import sdp.extensions.*
 import org.jenkinsci.plugins.workflow.job.WorkflowRun
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
+import org.jenkinsci.plugins.workflow.cps.CpsThread
 
 currentBuild.result = "SUCCESS" 
 setBinding(new SdpBinding())
