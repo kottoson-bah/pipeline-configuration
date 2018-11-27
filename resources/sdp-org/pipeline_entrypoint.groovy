@@ -19,8 +19,7 @@ node{
   println "UserRemoteConfigs: ${scm.getUserRemoteConfigs()}"
   println "Credential ID: ${scm.getUserRemoteConfigs()[0].getCredentialsId()}"
   println "GitHub URL: ${scm.getUserRemoteConfigs()[0].getUrl()}"
-  println "Env Git URL: ${env.GIT_URL}"
-  printlm "Base Git URL: ${env.GIT_URL.split('/')[0..-3].join('/')}"
+  printlm "Base Git URL: ${scm.getUserRemoteConfigs()[0].getUrl().split('/')[0..-3].join('/')}"
   stash "workspace"
   /*
     TODO: 
