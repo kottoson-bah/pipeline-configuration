@@ -24,6 +24,7 @@ node{
   println "Job Class: ${job.getClass()}"
   println "Job: ${job}"
   println "Job SCMs: ${job.getSCMs()}"
+  println "Binding Vars: ${this.getBinding.getVariables()}"
   stash "workspace"
   /*
     TODO: 
