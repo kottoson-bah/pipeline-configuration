@@ -10,6 +10,7 @@ libraries{
       registry = "https://docker-registry.default.svc:5000"
       repo = "keegan-sdp"
       cred = "openshift-docker-registry"
+    }
   }
 }
 
