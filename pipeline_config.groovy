@@ -7,7 +7,7 @@ libraries{
   sonarqube
   sdp{
     images{
-      registry = "https://docker-registry.default.svc:5000
+      registry = "https://docker-registry.default.svc:5000"
       repo = "keegan-sdp"
       cred = "openshift-docker-registry"
   }
