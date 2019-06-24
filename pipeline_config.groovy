@@ -1,8 +1,16 @@
 libraries{
   github_enterprise
   docker{
-    registry = "docker-registry.default.svc:5000/keegan-sdp"
+    registry = "docker-registry.default.svc:5000"
     cred = "openshift-docker-registry"
+    repo_path_prefix = "keegan-test-images"
+  }
+  sdp{
+    images{
+      registry = "docker-registry.default.svc:5000"
+      repo = "keegan-sdp"
+      cred = "openshift-docker-registry"
+    }
   }
 }
 
