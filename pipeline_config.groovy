@@ -32,4 +32,5 @@ application_environments {
 keywords{
  merge = true 
  develop = /^[dD]evelop$/
+ master = /^[mM]aster$/
 }
