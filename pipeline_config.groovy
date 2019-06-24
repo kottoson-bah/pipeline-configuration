@@ -24,8 +24,8 @@ libraries{
 
 application_environments {
   dev {
-    short_name: "dev"
-    long_name: "Development"
+    short_name = "dev"
+    long_name = "Development"
     //promote_previous_image: false
   }
 }
