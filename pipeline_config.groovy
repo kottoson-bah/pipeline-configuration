@@ -18,7 +18,7 @@ libraries{
     helm_configuration_repository_credential = "github"
     tiller_namespace = "keegan-test-tiller"
     tiller_credential = "keegan-test-tiller"
-    promote_previous_image = false
+    //promote_previous_image = false
   }
 }
 
