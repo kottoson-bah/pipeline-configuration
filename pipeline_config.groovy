@@ -1,5 +1,5 @@
 libraries{
-  github_enterprise
+  github
   docker{
     registry = "docker-registry.default.svc:5000"
     cred = "openshift-docker-registry"
