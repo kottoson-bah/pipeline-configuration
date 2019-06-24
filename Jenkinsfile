@@ -2,10 +2,10 @@ on_commit {
   build()
 }
 
-on_pull_request to: develop, {
+on_pull_request to: master, {
   build()
 }
 
-on_merge to: develop, {
+on_merge to: master, {
   deploy_to dev
 }
