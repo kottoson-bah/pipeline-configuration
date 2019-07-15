@@ -3,6 +3,7 @@ libraries{
   docker{
     registry = "docker-registry.default.svc:5000/keegan-sdp"
     cred = "openshift-docker-registry"
+    foo = "bar"
   }
   sonarqube
   sdp{
