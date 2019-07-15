@@ -1,7 +1,7 @@
 libraries{
   github_enterprise
   docker{
-    registry = "docker-registry.default.svc:5000/keegan-sdp"
+    registry = 42
     cred = "openshift-docker-registry"
   }
   sonarqube
