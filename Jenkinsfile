@@ -1,3 +1,6 @@
 static_code_analysis()
 build()
-deploy_to dev
+
+on_merge to: master, {
+  deploy_to dev
+}
