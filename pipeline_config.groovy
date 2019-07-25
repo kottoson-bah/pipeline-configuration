@@ -22,6 +22,9 @@ libraries{
     tiller_credential = "keegan-test-tiller"
     //promote_previous_image = false
   }
+  owasp_zap{
+    target = "http://sdp-example-proj-dev.apps.ocp-dev.microcaas.net"
+  }
 }
 
 application_environments {
