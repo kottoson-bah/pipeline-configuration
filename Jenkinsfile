@@ -8,4 +8,5 @@ on_pull_request to: master, {
 
 on_merge to: master, {
   deploy_to dev
+  penetration_test()
 }
