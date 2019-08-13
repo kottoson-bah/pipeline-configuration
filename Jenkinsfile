@@ -1,1 +1,3 @@
-build()
+stage("Hello World"){
+  println "hello world"
+}
